@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Sarab">
+      <meta name="description" content="Sarab - Fast Food & Restaurant HTML Template">
+      <title>MySarab</title>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
+      
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+      
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body id="top">
+      
+      <div id="topbar">
+         <div class="container"> 
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+               <div class="contact-summary d-flex flex-wrap">
+                  <span><svg class="svg-icon fas fa-phone-alt" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-phone"/></svg>+1 (800) 123-4567</span>
+                  <span><svg class="svg-icon fas fa-envelope" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-envelope"/></svg>hello@sarabfood.com</span>
+                  <span><svg class="svg-icon fas fa-map-marker-alt" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-location-dot"/></svg>42 Flavor Street, NY</span>
+               </div>
+               <div class="d-flex align-items-center gap-3">
+                  <span class="highlight-tag"><svg class="svg-icon fas fa-fire me-1" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-fire"/></svg>Free Delivery Today!</span>
+                  <div class="social-links">
+                     <a href="#"><svg class="svg-icon fab fa-facebook-f" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-facebook-f"/></svg></a>
+                     <a href="#"><svg class="svg-icon fab fa-instagram" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-instagram"/></svg></a>
+                     <a href="#"><svg class="svg-icon fab fa-tiktok" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-tiktok"/></svg></a>
+                     <a href="#"><svg class="svg-icon fab fa-youtube" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-youtube"/></svg></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <input type="checkbox" class="search-toggle-control" id="search-toggle" aria-label="Open search"/>
+      <nav class="navbar navbar-expand-lg" id="nav">
+         <div class="container">
+            <a class="navbar-brand" href="#">
+               <div class="brand-logo">
+                  <div class="brand-icon"><svg class="svg-icon fas fa-utensils" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-utensils"/></svg></div>
+                  <div>
+                     <div class="brand-name">Sar<span>ab</span></div>
+                     <div class="brand-tagline">Fast Food & Restaurant</div>
+                  </div>
+               </div>
+            </a>
+            <input type="checkbox" class="nav-toggle-control" id="nav-toggle" aria-label="Toggle navigation"/>
+            <label class="navbar-toggler border-0" for="nav-toggle">
+            <svg class="svg-icon fas fa-bars" style="color:var(--primary);font-size:1.35rem;" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-bars"/></svg>
+            </label>
+            <div class="collapse navbar-collapse" id="navmenu">
+               <ul class="navbar-nav mx-auto">
+                  <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#reservation">Reservation</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+               </ul>
+               <div class="d-flex align-items-center gap-1">
+                  
+                  <label id="navSearchBtn" for="search-toggle" title="Search"><svg class="svg-icon fas fa-search" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-search"/></svg></label>
+                  <a href="#menu" class="nav-link nav-button"><svg class="svg-icon fas fa-shopping-bag me-1" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-shopping-bag"/></svg>Order Now</a>
+               </div>
+            </div>
+         </div>
+      </nav>
+      
+      <div id="searchOv">
+         <label class="search-close" for="search-toggle" aria-label="Close search"><svg class="svg-icon fas fa-times" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-times"/></svg></label>
+         <div class="search-panel">
+            <h4>What are you craving today?</h4>
+            <div class="search-input">
+               <input type="text" id="searchInput" placeholder="Search burgers, pizza, chicken..." autocomplete="off"/>
+               <button><svg class="svg-icon fas fa-search" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-search"/></svg></button>
+            </div>
+            
+            <div class="search-categories">
+               <label class="search-category" for="filter-all">
+                  <img src="img/menu/1.jpg" alt=""/>All Items
+               </label>
+               <label class="search-category" for="filter-burgers">
+                  <img src="img/menu/1.jpg" alt=""/>Burgers
+               </label>
+               <label class="search-category" for="filter-pizza">
+                  <img src="img/menu/2.jpg" alt=""/>Pizza
+               </label>
+               <label class="search-category" for="filter-chicken">
+                  <img src="img/menu/3.jpg" alt=""/>Chicken
+               </label>
+               <label class="search-category" for="filter-wraps">
+                  <img src="img/menu/4.jpg" alt=""/>Wraps
+               </label>
+               <label class="search-category" for="filter-pasta">
+                  <img src="img/menu/5.jpg" alt=""/>Pasta
+               </label>
+               <label class="search-category" for="filter-desserts">
+                  <img src="img/menu/6.jpg" alt=""/>Desserts
+               </label>
+            </div>
+            <div class="search-trending">
+               <p><svg class="svg-icon fas fa-fire me-1" style="color:var(--secondary);" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-fire"/></svg>Trending Searches</p>
+               <span class="highlight-tag">Smash Burger</span>
+               <span class="highlight-tag">Nashville Chicken</span>
+               <span class="highlight-tag">Truffle Pizza</span>
+               <span class="highlight-tag">Lava Cake</span>
+               <span class="highlight-tag">Loaded Fries</span>
+               <span class="highlight-tag">Mango Shake</span>
+            </div>
+         </div>
+      </div>
+      <div class="story-modal" id="story-video">
+         <a class="video-overlay" href="#hero" aria-label="Close video"></a>
+         <div class="video-player">
+            <a class="video-close-button" href="#hero" aria-label="Close video"><svg class="svg-icon fas fa-times" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-times"/></svg></a>
+            <iframe src="#" title="Sarab restaurant story" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </div>
+      </div>
+      
+      <section id="hero">
+         <div class="hero-shape hero-shape-one"></div>
+         <div class="hero-shape hero-shape-two"></div>
+         <div class="hero-background-text">FOOD</div>
+         <div class="container">
+            <div class="row align-items-center g-5" style="min-height:88vh;">
+               <div class="col-lg-6">
+                  <div class="hero-badge">
+                     <div class="hero-badge-icon"><svg class="svg-icon fas fa-star" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-star"/></svg></div>
+                     <span>#1 Rated Fast Food Restaurant in New York</span>
+                  </div>
+                  <h1 class="hero-title">Delicious <span class="text-highlight">Fast Food</span><br/>for Every Moment</h1>
+                  <p class="hero-description">Experience bold flavors crafted from premium ingredients. From crispy burgers to gourmet pizzas - every bite is an adventure worth savoring.</p>
+                  <div class="d-flex flex-wrap gap-3 mb-2">
+                     <a href="#menu" class="primary-button"><svg class="svg-icon fas fa-utensils" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-utensils"/></svg>Explore Menu</a>
+                     
+					 <a href="#story-video" class="video-button video-popup-trigger">
+						<div class="play-icon"><svg class="svg-icon fas fa-play" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-play"/></svg></div>
+						<span>Watch Our Story</span>
+					 </a>
+                  </div>
+                  <div class="hero-stats d-flex gap-3 flex-wrap mt-4">
+                     <div class="hero-stat"><span class="stat-number">850<em>+</em></span><small>Happy Customers</small></div>
+                     <div class="stat-divider"></div>
+                     <div class="hero-stat"><span class="stat-number">120<em>+</em></span><small>Menu Items</small></div>
+                     <div class="stat-divider"></div>
+                     <div class="hero-stat"><span class="stat-number">15<em>+</em></span><small>Expert Chefs</small></div>
+                     <div class="stat-divider"></div>
+                     <div class="hero-stat"><span class="stat-number">12<em>yr</em></span><small>Experience</small></div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div style="position:relative;text-align:center;">
+                     <div class="hero-image">
+                        <img src="img/3.jpg" alt="Burger"/>
+                     </div>
+                     <div class="hero-card hero-deal-card">
+                        <div class="hero-card-icon color-red"><svg class="svg-icon fas fa-fire" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-fire"/></svg></div>
+                        <div><span class="hero-card-number">Hot Deal</span><span class="hero-card-caption">30% off today</span></div>
+                     </div>
+                     <div class="hero-card hero-rating-card">
+                        <div class="hero-card-icon color-yellow"><svg class="svg-icon fas fa-star" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-star"/></svg></div>
+                        <div><span class="hero-card-number">4.9/5</span><span class="hero-card-caption">2k+ reviews</span></div>
+                     </div>
+                     <div class="hero-card hero-delivery-card">
+                        <div class="hero-card-icon color-green"><svg class="svg-icon fas fa-clock" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-clock"/></svg></div>
+                        <div><span class="hero-card-number">20 min</span><span class="hero-card-caption">Fast delivery</span></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <div class="ticker-section">
+         <div class="ticker-track">
+            <div class="ticker-item"><svg class="svg-icon fas fa-circle" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-circle"/></svg>Crispy Fried Chicken</div>
+            <div class="ticker-item"><svg class="svg-icon fas fa-circle" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-circle"/></svg>Gourmet Burgers</div>
+            <div class="ticker-item"><svg class="svg-icon fas fa-circle" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-circle"/></svg>Artisan Pizzas</div>
+            <div class="ticker-item"><svg class="svg-icon fas fa-circle" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-circle"/></svg>Fresh Wraps &amp; Rolls</div>
+            <div class="ticker-item"><svg class="svg-icon fas fa-circle" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-circle"/></svg>Loaded Fries</div>
+            <div class="ticker-item"><svg class="svg-icon fas fa-circle" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-circle"/></svg>Ice Cream Shakes</div>
+            <div class="ticker-item"><svg class="svg-icon fas fa-circle" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-circle"/></svg>Grilled Sandwiches</div>
+            <div class="ticker-item"><svg class="svg-icon fas fa-circle" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-circle"/></svg>Crispy Fried Chicken</div>
+            <div class="ticker-item"><svg class="svg-icon fas fa-circle" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-circle"/></svg>Gourmet Burgers</div>
+            <div class="ticker-item"><svg class="svg-icon fas fa-circle" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-circle"/></svg>Artisan Pizzas</div>
+            <div class="ticker-item"><svg class="svg-icon fas fa-circle" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-circle"/></svg>Fresh Wraps &amp; Rolls</div>
+            <div class="ticker-item"><svg class="svg-icon fas fa-circle" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-circle"/></svg>Loaded Fries</div>
+            <div class="ticker-item"><svg class="svg-icon fas fa-circle" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-circle"/></svg>Ice Cream Shakes</div>
+            <div class="ticker-item"><svg class="svg-icon fas fa-circle" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-circle"/></svg>Grilled Sandwiches</div>
+         </div>
+      </div>
+      
+      <section id="category">
+         <div class="container">
+            <div class="text-center mb-5">
+               <span class="section-label">What We Offer</span>
+               <h2 class="section-title">Browse by <span>Category</span></h2>
+               <div class="section-divider"></div>
+               <p class="section-description mx-auto" style="max-width:480px;">From sizzling burgers to exotic world cuisines - find your favourite in our menu</p>
+            </div>
+            <div class="row g-3 justify-content-center">
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                  <label class="category-card" for="filter-all">
+                     <img class="category-image" src="img/category/1.jpg" alt=""/>
+                     <div class="category-name">All Items</div>
+                     <div class="category-count">99 items</div>
+                  </label>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                  <label class="category-card" for="filter-burgers">
+                     <img class="category-image" src="img/category/2.jpg" alt=""/>
+                     <div class="category-name">Burgers</div>
+                     <div class="category-count">24 items</div>
+                  </label>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                  <label class="category-card" for="filter-pizza">
+                     <img class="category-image" src="img/category/3.jpg" alt=""/>
+                     <div class="category-name">Pizza</div>
+                     <div class="category-count">18 items</div>
+                  </label>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                  <label class="category-card" for="filter-chicken">
+                     <img class="category-image" src="img/category/4.jpg" alt=""/>
+                     <div class="category-name">Fried Chicken</div>
+                     <div class="category-count">15 items</div>
+                  </label>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                  <label class="category-card" for="filter-wraps">
+                     <img class="category-image" src="img/category/5.jpg" alt=""/>
+                     <div class="category-name">Wraps</div>
+                     <div class="category-count">12 items</div>
+                  </label>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                  <label class="category-card" for="filter-desserts">
+                     <img class="category-image" src="img/category/6.jpg" alt=""/>
+                     <div class="category-name">Desserts</div>
+                     <div class="category-count">20 items</div>
+                  </label>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section id="about">
+         <div class="container">
+            <div class="row align-items-center g-5">
+               <div class="col-lg-5">
+                  <div class="about-image-stack">
+                     <div class="about-experience"><span class="about-stat-number">12+</span><small>Years of<br/>Excellence</small></div>
+                     <div class="about-content"><img src="img/1.jpg" alt="Restaurant"/></div>
+                     <div class="about-side-image"><img src="img/2.jpg" alt=""/></div>
+                  </div>
+               </div>
+               <div class="col-lg-7">
+                  <span class="section-label">Our Story</span>
+                  <h2 class="section-title text-start">We Invite You to Visit<br/>Our <span>Food Restaurant</span></h2>
+                  <div class="section-divider align-left"></div>
+                  <p class="section-description mb-4">Founded in 2012, Sarab began as a small corner joint with a big dream - to serve food that brings people together. Today we're proud to serve thousands of happy customers every week with the same passion that started it all.</p>
+                  <div class="mb-4">
+                     <div class="feature-item">
+                        <div class="feature-icon color-red"><svg class="svg-icon fas fa-leaf" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-leaf"/></svg></div>
+                        <div>
+                           <h6>100% Fresh Ingredients</h6>
+                           <p>We source locally and sustainably. Every ingredient is hand-picked daily for maximum freshness.</p>
+                        </div>
+                     </div>
+                     <div class="feature-item">
+                        <div class="feature-icon color-yellow"><svg class="svg-icon fas fa-award" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-award"/></svg></div>
+                        <div>
+                           <h6>Award-Winning Recipes</h6>
+                           <p>Our signature recipes have won national culinary awards 5 years in a row.</p>
+                        </div>
+                     </div>
+                     <div class="feature-item">
+                        <div class="feature-icon color-green"><svg class="svg-icon fas fa-shipping-fast" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-truck-fast"/></svg></div>
+                        <div>
+                           <h6>Lightning-Fast Delivery</h6>
+                           <p>Order online and get hot, fresh food at your door in under 25 minutes, guaranteed.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="#menu" class="primary-button"><svg class="svg-icon fas fa-book-open" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-book-open"/></svg>View Full Menu</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section id="menu">
+         <div class="container">
+            <div class="text-center mb-5">
+               <span class="section-label">What's Cooking</span>
+               <h2 class="section-title">Our Delicious <span>Menu</span></h2>
+               <div class="section-divider"></div>
+            </div>
+            
+            <input class="menu-filter-control" type="radio" name="menu-filter" id="filter-all" checked/>
+            <input class="menu-filter-control" type="radio" name="menu-filter" id="filter-burgers"/>
+            <input class="menu-filter-control" type="radio" name="menu-filter" id="filter-pizza"/>
+            <input class="menu-filter-control" type="radio" name="menu-filter" id="filter-chicken"/>
+            <input class="menu-filter-control" type="radio" name="menu-filter" id="filter-wraps"/>
+            <input class="menu-filter-control" type="radio" name="menu-filter" id="filter-desserts"/>
+            <input class="menu-filter-control" type="radio" name="menu-filter" id="filter-pasta"/>
+            <div class="menu-filter-list text-center mb-4">
+               <label class="menu-filter-button" for="filter-all">All</label>
+               <label class="menu-filter-button" for="filter-burgers">Burgers</label>
+               <label class="menu-filter-button" for="filter-pizza">Pizza</label>
+               <label class="menu-filter-button" for="filter-chicken">Chicken</label>
+               <label class="menu-filter-button" for="filter-wraps">Wraps</label>
+               <label class="menu-filter-button" for="filter-desserts">Desserts</label>
+               <label class="menu-filter-button" for="filter-pasta">Pasta</label>
+            </div>
+            <div class="row g-4" id="mgrid">
+               
+               <div class="col-sm-6 col-lg-4 menu-wrapper" data-c="burgers">
+                  <a class="menu-card" href="#menu-item-burger">
+                     <div class="menu-image">
+                        <img src="img/menu/1.jpg" alt="Smash Burger"/>
+                        <div class="menu-badge menu-hot-item"><svg class="svg-icon fas fa-star" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-star"/></svg> Hot</div>
+                        <div class="menu-favorite"><svg class="svg-icon far fa-heart" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-heart"/></svg></div>
+                     </div>
+                     <div class="menu-content">
+                        <div class="menu-category">Burgers</div>
+                        <div class="menu-title">Classic Smash Burger</div>
+                        <div class="menu-description">Double smashed patty, cheddar, caramelized onions, pickles &amp; special sauce</div>
+                        <div class="menu-footer">
+                           <div>
+                              <div class="menu-price">$14.99 <small>$18.99</small></div>
+                              <div class="menu-rating"><svg class="svg-icon fas fa-star" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-star"/></svg> <span style="color:#bbb;font-size:.7rem;">(128)</span></div>
+                           </div>
+                           <span class="menu-add-button" aria-hidden="true"><svg class="svg-icon fas fa-plus" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-plus"/></svg></span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-sm-6 col-lg-4 menu-wrapper" data-c="pizza">
+                  <a class="menu-card" href="#menu-item-pizza">
+                     <div class="menu-image">
+                        <img src="img/menu/2.jpg" alt="Pizza"/>
+                        <div class="menu-badge new-price"><svg class="svg-icon fas fa-star" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-star"/></svg> New</div>
+                        <div class="menu-favorite"><svg class="svg-icon far fa-heart" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-heart"/></svg></div>
+                     </div>
+                     <div class="menu-content">
+                        <div class="menu-category">Pizza</div>
+                        <div class="menu-title">Margherita Royale</div>
+                        <div class="menu-description">San Marzano tomatoes, buffalo mozzarella, basil &amp; truffle oil on sourdough</div>
+                        <div class="menu-footer">
+                           <div>
+                              <div class="menu-price">$19.99 <small>$24.99</small></div>
+                              <div class="menu-rating"><svg class="svg-icon fas fa-star" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-star"/></svg> <span style="color:#bbb;font-size:.7rem;">(95)</span></div>
+                           </div>
+                           <span class="menu-add-button" aria-hidden="true"><svg class="svg-icon fas fa-plus" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-plus"/></svg></span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-sm-6 col-lg-4 menu-wrapper" data-c="chicken">
+                  <a class="menu-card" href="#menu-item-chicken">
+                     <div class="menu-image">
+                        <img src="img/menu/3.jpg" alt="Chicken"/>
+                        <div class="menu-badge"><svg class="svg-icon fas fa-star" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-star"/></svg> Best Seller</div>
+                        <div class="menu-favorite"><svg class="svg-icon far fa-heart" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-heart"/></svg></div>
+                     </div>
+                     <div class="menu-content">
+                        <div class="menu-category">Chicken</div>
+                        <div class="menu-title">Nashville Hot Chicken</div>
+                        <div class="menu-description">Crispy fried chicken in fiery Nashville spice blend with honey drizzle</div>
+                        <div class="menu-footer">
+                           <div>
+                              <div class="menu-price">$12.99 <small>$16.99</small></div>
+                              <div class="menu-rating"><svg class="svg-icon fas fa-star" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-star"/></svg> <span style="color:#bbb;font-size:.7rem;">(210)</span></div>
+                           </div>
+                           <span class="menu-add-button" aria-hidden="true"><svg class="svg-icon fas fa-plus" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-plus"/></svg></span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-sm-6 col-lg-4 menu-wrapper" data-c="wraps">
+                  <a class="menu-card" href="#menu-item-wrap">
+                     <div class="menu-image">
+                        <img src="img/menu/4.jpg" alt="Wrap"/>
+                        <div class="menu-favorite"><svg class="svg-icon far fa-heart" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-heart"/></svg></div>
+                     </div>
+                     <div class="menu-content">
+                        <div class="menu-category">Wraps</div>
+                        <div class="menu-title">Loaded Fajita Wrap</div>
+                        <div class="menu-description">Grilled chicken, peppers, sour cream &amp; guacamole in a warm tortilla</div>
+                        <div class="menu-footer">
+                           <div>
+                              <div class="menu-price">$10.99</div>
+                              <div class="menu-rating"><svg class="svg-icon fas fa-star" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-star"/></svg> <span style="color:#bbb;font-size:.7rem;">(74)</span></div>
+                           </div>
+                           <span class="menu-add-button" aria-hidden="true"><svg class="svg-icon fas fa-plus" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-plus"/></svg></span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-sm-6 col-lg-4 menu-wrapper" data-c="desserts">
+                  <a class="menu-card" href="#menu-item-dessert">
+                     <div class="menu-image">
+                        <img src="img/menu/5.jpg" alt="Lava Cake"/>
+                        <div class="menu-badge new-price"><svg class="svg-icon fas fa-star" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-star"/></svg> New</div>
+                        <div class="menu-favorite"><svg class="svg-icon far fa-heart" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-heart"/></svg></div>
+                     </div>
+                     <div class="menu-content">
+                        <div class="menu-category">Desserts</div>
+                        <div class="menu-title">Nutella Lava Cake</div>
+                        <div class="menu-description">Molten chocolate cake with Nutella center, vanilla ice cream &amp; caramel</div>
+                        <div class="menu-footer">
+                           <div>
+                              <div class="menu-price">$8.99 <small>$11.99</small></div>
+                              <div class="menu-rating"><svg class="svg-icon fas fa-star" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-star"/></svg> <span style="color:#bbb;font-size:.7rem;">(56)</span></div>
+                           </div>
+                           <span class="menu-add-button" aria-hidden="true"><svg class="svg-icon fas fa-plus" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-plus"/></svg></span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-sm-6 col-lg-4 menu-wrapper" data-c="pasta">
+                  <a class="menu-card" href="#menu-item-pasta">
+                     <div class="menu-image">
+                        <img src="img/menu/6.jpg" alt="Pasta"/>
+                        <div class="menu-badge menu-hot-item">Chef's Pick</div>
+                        <div class="menu-favorite"><svg class="svg-icon far fa-heart" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-heart"/></svg></div>
+                     </div>
+                     <div class="menu-content">
+                        <div class="menu-category">Pasta</div>
+                        <div class="menu-title">Truffle Mushroom Pasta</div>
+                        <div class="menu-description">Al dente tagliatelle, wild mushrooms, black truffle, parmesan &amp; thyme</div>
+                        <div class="menu-footer">
+                           <div>
+                              <div class="menu-price">$16.99</div>
+                              <div class="menu-rating"><svg class="svg-icon fas fa-star" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-star"/></svg> <span style="color:#bbb;font-size:.7rem;">(88)</span></div>
+                           </div>
+                           <span class="menu-add-button" aria-hidden="true"><svg class="svg-icon fas fa-plus" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-plus"/></svg></span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            
+            <div class="text-center mt-5"><a href="#" class="primary-button"><svg class="svg-icon fas fa-th-large" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-th-large"/></svg>View Full Menu</a></div>
+         </div>
+      </section>
+
+      <div class="menu-popup" id="menu-item-burger">
+         <a class="menu-popup-overlay" href="#menu" aria-label="Close item details"></a>
+         <div class="menu-popup-card">
+            <a class="menu-popup-close" href="#menu" aria-label="Close"><svg class="svg-icon fas fa-times" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-times"/></svg></a>
+            <div class="menu-popup-image"><img src="img/menu/1.jpg" alt="Classic Smash Burger"/></div>
+            <div class="menu-popup-content">
+               <div class="menu-popup-category">Burgers</div>
+               <h3 class="menu-popup-title">Classic Smash Burger</h3>
+               <div class="menu-popup-rating">★★★★★ <span>4.9 (128 reviews)</span></div>
+               <p class="menu-popup-description">Double smashed patty, cheddar cheese, caramelized onions, house pickles and our legendary special sauce. Made fresh to order on a toasted brioche bun.</p>
+               <div class="menu-popup-price">$14.99 <small>$18.99</small></div>
+               <div class="menu-popup-stats"><div class="menu-popup-stat"><div class="menu-popup-stat-value">620 kcal</div><div class="menu-popup-stat-label">Calories</div></div><div class="menu-popup-stat"><div class="menu-popup-stat-value">12 min</div><div class="menu-popup-stat-label">Prep Time</div></div><div class="menu-popup-stat"><div class="menu-popup-stat-value">4.9/5</div><div class="menu-popup-stat-label">Rating</div></div></div>
+               <div class="menu-popup-tags"><span class="menu-popup-tag">Spicy</span><span class="menu-popup-tag">Bestseller</span><span class="menu-popup-tag">Beef</span></div>
+               <a class="menu-popup-order-button" href="mailto:hello@sarabfood.com?subject=Order%20Classic%20Smash%20Burger"><svg class="svg-icon fas fa-shopping-cart" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-shopping-cart"/></svg>Order This Item</a>
+            </div>
+         </div>
+      </div>
+      <div class="menu-popup" id="menu-item-pizza">
+         <a class="menu-popup-overlay" href="#menu" aria-label="Close item details"></a>
+         <div class="menu-popup-card">
+            <a class="menu-popup-close" href="#menu" aria-label="Close"><svg class="svg-icon fas fa-times" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-times"/></svg></a>
+            <div class="menu-popup-image"><img src="img/menu/2.jpg" alt="Margherita Royale"/></div>
+            <div class="menu-popup-content">
+               <div class="menu-popup-category">Pizza</div>
+               <h3 class="menu-popup-title">Margherita Royale</h3>
+               <div class="menu-popup-rating">★★★★★ <span>4.8 (95 reviews)</span></div>
+               <p class="menu-popup-description">San Marzano tomatoes, fresh buffalo mozzarella, fragrant basil leaves, drizzled with Italian truffle oil on a hand-stretched sourdough base.</p>
+               <div class="menu-popup-price">$19.99 <small>$24.99</small></div>
+               <div class="menu-popup-stats"><div class="menu-popup-stat"><div class="menu-popup-stat-value">480 kcal</div><div class="menu-popup-stat-label">Calories</div></div><div class="menu-popup-stat"><div class="menu-popup-stat-value">18 min</div><div class="menu-popup-stat-label">Prep Time</div></div><div class="menu-popup-stat"><div class="menu-popup-stat-value">4.8/5</div><div class="menu-popup-stat-label">Rating</div></div></div>
+               <div class="menu-popup-tags"><span class="menu-popup-tag">Vegetarian</span><span class="menu-popup-tag">New</span><span class="menu-popup-tag">Italian</span></div>
+               <a class="menu-popup-order-button" href="mailto:hello@sarabfood.com?subject=Order%20Margherita%20Royale"><svg class="svg-icon fas fa-shopping-cart" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-shopping-cart"/></svg>Order This Item</a>
+            </div>
+         </div>
+      </div>
+      <div class="menu-popup" id="menu-item-chicken">
+         <a class="menu-popup-overlay" href="#menu" aria-label="Close item details"></a>
+         <div class="menu-popup-card">
+            <a class="menu-popup-close" href="#menu" aria-label="Close"><svg class="svg-icon fas fa-times" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-times"/></svg></a>
+            <div class="menu-popup-image"><img src="img/menu/3.jpg" alt="Nashville Hot Chicken"/></div>
+            <div class="menu-popup-content">
+               <div class="menu-popup-category">Chicken</div>
+               <h3 class="menu-popup-title">Nashville Hot Chicken</h3>
+               <div class="menu-popup-rating">★★★★★ <span>5.0 (210 reviews)</span></div>
+               <p class="menu-popup-description">Extra-crispy fried chicken tossed in our signature fiery Nashville spice blend, served with honey drizzle and house pickles on a toasted brioche bun.</p>
+               <div class="menu-popup-price">$12.99 <small>$16.99</small></div>
+               <div class="menu-popup-stats"><div class="menu-popup-stat"><div class="menu-popup-stat-value">710 kcal</div><div class="menu-popup-stat-label">Calories</div></div><div class="menu-popup-stat"><div class="menu-popup-stat-value">15 min</div><div class="menu-popup-stat-label">Prep Time</div></div><div class="menu-popup-stat"><div class="menu-popup-stat-value">5.0/5</div><div class="menu-popup-stat-label">Rating</div></div></div>
+               <div class="menu-popup-tags"><span class="menu-popup-tag">Spicy</span><span class="menu-popup-tag">Bestseller</span><span class="menu-popup-tag">Crispy</span></div>
+               <a class="menu-popup-order-button" href="mailto:hello@sarabfood.com?subject=Order%20Nashville%20Hot%20Chicken"><svg class="svg-icon fas fa-shopping-cart" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-shopping-cart"/></svg>Order This Item</a>
+            </div>
+         </div>
+      </div>
+      <div class="menu-popup" id="menu-item-wrap">
+         <a class="menu-popup-overlay" href="#menu" aria-label="Close item details"></a>
+         <div class="menu-popup-card">
+            <a class="menu-popup-close" href="#menu" aria-label="Close"><svg class="svg-icon fas fa-times" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-times"/></svg></a>
+            <div class="menu-popup-image"><img src="img/menu/4.jpg" alt="Loaded Fajita Wrap"/></div>
+            <div class="menu-popup-content">
+               <div class="menu-popup-category">Wraps</div>
+               <h3 class="menu-popup-title">Loaded Fajita Wrap</h3>
+               <div class="menu-popup-rating">★★★★★ <span>4.5 (74 reviews)</span></div>
+               <p class="menu-popup-description">Grilled chicken strips, sauteed bell peppers and onions, sour cream, fresh guacamole and salsa wrapped in a warm flour tortilla with melted cheddar.</p>
+               <div class="menu-popup-price">$10.99</div>
+               <div class="menu-popup-stats"><div class="menu-popup-stat"><div class="menu-popup-stat-value">520 kcal</div><div class="menu-popup-stat-label">Calories</div></div><div class="menu-popup-stat"><div class="menu-popup-stat-value">10 min</div><div class="menu-popup-stat-label">Prep Time</div></div><div class="menu-popup-stat"><div class="menu-popup-stat-value">4.5/5</div><div class="menu-popup-stat-label">Rating</div></div></div>
+               <div class="menu-popup-tags"><span class="menu-popup-tag">Grilled</span><span class="menu-popup-tag">Fresh</span><span class="menu-popup-tag">Mexican</span></div>
+               <a class="menu-popup-order-button" href="mailto:hello@sarabfood.com?subject=Order%20Loaded%20Fajita%20Wrap"><svg class="svg-icon fas fa-shopping-cart" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-shopping-cart"/></svg>Order This Item</a>
+            </div>
+         </div>
+      </div>
+      <div class="menu-popup" id="menu-item-dessert">
+         <a class="menu-popup-overlay" href="#menu" aria-label="Close item details"></a>
+         <div class="menu-popup-card">
+            <a class="menu-popup-close" href="#menu" aria-label="Close"><svg class="svg-icon fas fa-times" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-times"/></svg></a>
+            <div class="menu-popup-image"><img src="img/menu/5.jpg" alt="Nutella Lava Cake"/></div>
+            <div class="menu-popup-content">
+               <div class="menu-popup-category">Desserts</div>
+               <h3 class="menu-popup-title">Nutella Lava Cake</h3>
+               <div class="menu-popup-rating">★★★★★ <span>4.9 (56 reviews)</span></div>
+               <p class="menu-popup-description">Warm molten chocolate cake with a gooey Nutella center, served alongside Madagascar vanilla bean ice cream with salted caramel drizzle and fresh berries.</p>
+               <div class="menu-popup-price">$8.99 <small>$11.99</small></div>
+               <div class="menu-popup-stats"><div class="menu-popup-stat"><div class="menu-popup-stat-value">390 kcal</div><div class="menu-popup-stat-label">Calories</div></div><div class="menu-popup-stat"><div class="menu-popup-stat-value">8 min</div><div class="menu-popup-stat-label">Prep Time</div></div><div class="menu-popup-stat"><div class="menu-popup-stat-value">4.9/5</div><div class="menu-popup-stat-label">Rating</div></div></div>
+               <div class="menu-popup-tags"><span class="menu-popup-tag">Sweet</span><span class="menu-popup-tag">New</span><span class="menu-popup-tag">Chocolate</span></div>
+               <a class="menu-popup-order-button" href="mailto:hello@sarabfood.com?subject=Order%20Nutella%20Lava%20Cake"><svg class="svg-icon fas fa-shopping-cart" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-shopping-cart"/></svg>Order This Item</a>
+            </div>
+         </div>
+      </div>
+      <div class="menu-popup" id="menu-item-pasta">
+         <a class="menu-popup-overlay" href="#menu" aria-label="Close item details"></a>
+         <div class="menu-popup-card">
+            <a class="menu-popup-close" href="#menu" aria-label="Close"><svg class="svg-icon fas fa-times" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-times"/></svg></a>
+            <div class="menu-popup-image"><img src="img/menu/6.jpg" alt="Truffle Mushroom Pasta"/></div>
+            <div class="menu-popup-content">
+               <div class="menu-popup-category">Pasta</div>
+               <h3 class="menu-popup-title">Truffle Mushroom Pasta</h3>
+               <div class="menu-popup-rating">★★★★★ <span>4.9 (88 reviews)</span></div>
+               <p class="menu-popup-description">Al dente tagliatelle tossed with mixed wild mushrooms, freshly shaved black truffle, aged parmesan, fresh thyme and a touch of cream in garlic butter.</p>
+               <div class="menu-popup-price">$16.99</div>
+               <div class="menu-popup-stats"><div class="menu-popup-stat"><div class="menu-popup-stat-value">560 kcal</div><div class="menu-popup-stat-label">Calories</div></div><div class="menu-popup-stat"><div class="menu-popup-stat-value">20 min</div><div class="menu-popup-stat-label">Prep Time</div></div><div class="menu-popup-stat"><div class="menu-popup-stat-value">4.9/5</div><div class="menu-popup-stat-label">Rating</div></div></div>
+               <div class="menu-popup-tags"><span class="menu-popup-tag">Vegetarian</span><span class="menu-popup-tag">Chef's Pick</span><span class="menu-popup-tag">Italian</span></div>
+               <a class="menu-popup-order-button" href="mailto:hello@sarabfood.com?subject=Order%20Truffle%20Mushroom%20Pasta"><svg class="svg-icon fas fa-shopping-cart" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-shopping-cart"/></svg>Order This Item</a>
+            </div>
+         </div>
+      </div>
+      
+      <section id="special">
+         <div class="offer-background"></div>
+         <div class="container" style="position:relative;z-index:2;">
+            <div class="row align-items-center g-5">
+               <div class="col-lg-6">
+                  <div class="offer-tag"><svg class="svg-icon fas fa-bolt me-1" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-bolt"/></svg>Limited Time Offer</div>
+                  <h2 class="offer-title">Get 30% Off<br/>Our Signature<br/><span>Burger</span> Meal</h2>
+                  <p class="offer-description">Don't miss our weekend special - grab our award-winning signature burger combo with loaded fries and a premium shake at an unbeatable price.</p>
+                  <div class="countdown">
+                     <div class="countdown-item">
+                        <span class="countdown-number" aria-hidden="true"><span class="countdown-digit-window">0</span><span class="countdown-digit-window"><span class="countdown-digit-track countdown-hour-ones"><span>8</span><span>7</span><span>6</span><span>5</span><span>4</span><span>3</span><span>2</span><span>1</span><span>0</span><span>9</span><span>8</span></span></span></span>
+                        <span class="countdown-label">Hours</span>
+                     </div>
+                     <div class="countdown-item">
+                        <span class="countdown-number" aria-hidden="true"><span class="countdown-digit-window"><span class="countdown-digit-track countdown-minute-tens"><span>4</span><span>3</span><span>2</span><span>1</span><span>0</span><span>5</span><span>4</span></span></span><span class="countdown-digit-window"><span class="countdown-digit-track countdown-minute-ones"><span>5</span><span>4</span><span>3</span><span>2</span><span>1</span><span>0</span><span>9</span><span>8</span><span>7</span><span>6</span><span>5</span></span></span></span>
+                        <span class="countdown-label">Minutes</span>
+                     </div>
+                     <div class="countdown-item">
+                        <span class="countdown-number" aria-hidden="true"><span class="countdown-digit-window"><span class="countdown-digit-track countdown-second-tens"><span>3</span><span>2</span><span>1</span><span>0</span><span>5</span><span>4</span><span>3</span></span></span><span class="countdown-digit-window"><span class="countdown-digit-track countdown-second-ones"><span>0</span><span>9</span><span>8</span><span>7</span><span>6</span><span>5</span><span>4</span><span>3</span><span>2</span><span>1</span><span>0</span></span></span></span>
+                        <span class="countdown-label">Seconds</span>
+                     </div>
+                     <span class="visually-hidden">Countdown starts at 8 hours, 45 minutes, and 30 seconds and runs for 8 hours, 45 minutes, and 30 seconds.</span>
+                  </div>
+                  <a href="#menu" class="primary-button"><svg class="svg-icon fas fa-shopping-cart" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-shopping-cart"/></svg>Grab the Deal</a>
+               </div>
+               <div class="col-lg-6">
+                  <div class="offer-image-wrap">
+                     <div class="offer-glow"></div>
+                     <div class="offer-badge"><span class="old-price">$24.99</span><span class="price-next">$17.49</span></div>
+                     <img src="img/4.jpg" alt="Special Burger"/>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="gallery">
+         <div class="container">
+            <div class="text-center mb-5">
+               <span class="section-label">Food Showcase</span>
+               <h2 class="section-title">Let's See Our <span>Fast Food</span></h2>
+               <div class="section-divider"></div>
+            </div>
+            <div class="gallery-grid">
+               <a class="gallery-item" href="#gallery-item-1">
+                  <img src="img/portfolio/1.jpg" alt="Burgers"/>
+                  <div class="gallery-overlay"><span><svg class="svg-icon fas fa-expand-alt" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-expand-alt"/></svg> Gourmet Burgers</span></div>
+               </a>
+               <a class="gallery-item" href="#gallery-item-2">
+                  <img src="img/portfolio/2.jpg" alt="Pizza"/>
+                  <div class="gallery-overlay"><span><svg class="svg-icon fas fa-expand-alt" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-expand-alt"/></svg> Wood-Fired Pizza</span></div>
+               </a>
+               <a class="gallery-item" href="#gallery-item-3">
+                  <img src="img/portfolio/3.jpg" alt="Chicken"/>
+                  <div class="gallery-overlay"><span><svg class="svg-icon fas fa-expand-alt" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-expand-alt"/></svg> Crispy Fried Chicken</span></div>
+               </a>
+               <a class="gallery-item" href="#gallery-item-4">
+                  <img src="img/portfolio/4.jpg" alt="Desserts"/>
+                  <div class="gallery-overlay"><span><svg class="svg-icon fas fa-expand-alt" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-expand-alt"/></svg> Sweet Desserts</span></div>
+               </a>
+               <a class="gallery-item" href="#gallery-item-5">
+                  <img src="img/portfolio/5.jpg" alt="Wraps"/>
+                  <div class="gallery-overlay"><span><svg class="svg-icon fas fa-expand-alt" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-expand-alt"/></svg> Fresh Wraps &amp; Rolls</span></div>
+               </a>
+            </div>
+         </div>
+      </section>
+      <div class="gallery-popup-modal" id="gallery-item-1">
+         <a class="gallery-popup-overlay" href="#gallery" aria-label="Close image"></a>
+         <div class="gallery-popup"><a class="gallery-close" href="#gallery" aria-label="Close"><svg class="svg-icon fas fa-times" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-times"/></svg></a><img src="img/portfolio/1.jpg" alt="Gourmet Burgers"/><div class="gallery-caption"><h5>Gourmet Burgers</h5><p>Our award-winning smash burgers, hand-crafted with 100% premium beef, aged cheddar and house-made sauces.</p></div><div class="gallery-navigation"><a href="#gallery-item-5">Prev</a><a href="#gallery-item-2">Next</a></div></div>
+      </div>
+      <div class="gallery-popup-modal" id="gallery-item-2">
+         <a class="gallery-popup-overlay" href="#gallery" aria-label="Close image"></a>
+         <div class="gallery-popup"><a class="gallery-close" href="#gallery" aria-label="Close"><svg class="svg-icon fas fa-times" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-times"/></svg></a><img src="img/portfolio/2.jpg" alt="Wood-Fired Pizza"/><div class="gallery-caption"><h5>Wood-Fired Pizza</h5><p>Authentic Neapolitan-style pizzas fired at 900deg F in our wood-burning stone oven for the perfect char.</p></div><div class="gallery-navigation"><a href="#gallery-item-1">Prev</a><a href="#gallery-item-3">Next</a></div></div>
+      </div>
+      <div class="gallery-popup-modal" id="gallery-item-3">
+         <a class="gallery-popup-overlay" href="#gallery" aria-label="Close image"></a>
+         <div class="gallery-popup"><a class="gallery-close" href="#gallery" aria-label="Close"><svg class="svg-icon fas fa-times" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-times"/></svg></a><img src="img/portfolio/3.jpg" alt="Crispy Fried Chicken"/><div class="gallery-caption"><h5>Crispy Fried Chicken</h5><p>Double-brined, hand-battered chicken fried to golden perfection using our 15-spice secret blend.</p></div><div class="gallery-navigation"><a href="#gallery-item-2">Prev</a><a href="#gallery-item-4">Next</a></div></div>
+      </div>
+      <div class="gallery-popup-modal" id="gallery-item-4">
+         <a class="gallery-popup-overlay" href="#gallery" aria-label="Close image"></a>
+         <div class="gallery-popup"><a class="gallery-close" href="#gallery" aria-label="Close"><svg class="svg-icon fas fa-times" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-times"/></svg></a><img src="img/portfolio/4.jpg" alt="Sweet Desserts"/><div class="gallery-caption"><h5>Sweet Desserts</h5><p>Handcrafted desserts - from molten lava cakes to artisan ice cream sundaes and seasonal pastries.</p></div><div class="gallery-navigation"><a href="#gallery-item-3">Prev</a><a href="#gallery-item-5">Next</a></div></div>
+      </div>
+      <div class="gallery-popup-modal" id="gallery-item-5">
+         <a class="gallery-popup-overlay" href="#gallery" aria-label="Close image"></a>
+         <div class="gallery-popup"><a class="gallery-close" href="#gallery" aria-label="Close"><svg class="svg-icon fas fa-times" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-times"/></svg></a><img src="img/portfolio/5.jpg" alt="Fresh Wraps and Rolls"/><div class="gallery-caption"><h5>Fresh Wraps &amp; Rolls</h5><p>Loaded fresh wraps packed with grilled proteins, crunchy vegetables and our house-made sauces.</p></div><div class="gallery-navigation"><a href="#gallery-item-4">Prev</a><a href="#gallery-item-1">Next</a></div></div>
+      </div>
+
+      
+
+      
+
+      
+
+      
+
+      <section id="reservation">
+         <div class="container">
+            <div class="text-center mb-5">
+               <span class="section-label">Book a Table</span>
+               <h2 class="section-title">Make a <span>Reservation</span></h2>
+               <div class="section-divider"></div>
+               <p class="section-description mx-auto" style="max-width:480px;">Reserve your table for a memorable dining experience. We recommend booking 24 hours in advance for weekend evenings.</p>
+            </div>
+            <div class="row g-4 align-items-start">
+               <div class="col-lg-4">
+                  <div style="background:var(--dark);border-radius:18px;padding:36px;">
+                     <h4 style="color:#fff;font-size:1.3rem;margin-bottom:8px;">Contact Info</h4>
+                     <p style="color:rgba(255,255,255,.55);font-size:.85rem;margin-bottom:26px;">We're happy to help you plan the perfect dining experience.</p>
+                     <div class="d-flex flex-column gap-3">
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><svg class="svg-icon fas fa-clock" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-clock"/></svg></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Opening Hours</strong><span style="color:#fff;font-size:.87rem;">Wed - Sun, 9 AM - 11 PM</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><svg class="svg-icon fas fa-phone-alt" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-phone"/></svg></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Call for Booking</strong><span style="color:#fff;font-size:.87rem;">+1 (800) 123-4567</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><svg class="svg-icon fas fa-users" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-users"/></svg></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Group Dining</strong><span style="color:#fff;font-size:.87rem;">Special menus for 10+ guests</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><svg class="svg-icon fas fa-map-marker-alt" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-location-dot"/></svg></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Location</strong><span style="color:#fff;font-size:.87rem;">42 Flavor Street, NY</span></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8">
+                  <form class="form-card" data-success-form action="mailto:hello@sarabfood.com" method="post" enctype="text/plain">
+                     <div class="row g-3">
+                        <div class="col-md-6"><label class="form-label" for="reservation-name">Full Name *</label><input id="reservation-name" name="Name" type="text" class="menu-filter-input" placeholder="John Doe" autocomplete="name" required/></div>
+                        <div class="col-md-6"><label class="form-label" for="reservation-phone">Phone Number *</label><input id="reservation-phone" name="Phone" type="tel" class="menu-filter-input" placeholder="+1 (800) 000-0000" autocomplete="tel" required/></div>
+                        <div class="col-md-6"><label class="form-label" for="reservation-email">Email Address *</label><input id="reservation-email" name="Email" type="email" class="menu-filter-input" placeholder="you@email.com" autocomplete="email" required/></div>
+                        <div class="col-md-6">
+                           <label class="form-label" for="reservation-guests">Number of Guests *</label>
+                           <select class="menu-filter-input" id="reservation-guests" name="Guests" required>
+                              <option value="" disabled selected>Select guests</option>
+                              <option>1 Person</option>
+                              <option>2 People</option>
+                              <option>3 - 4 People</option>
+                              <option>5 - 6 People</option>
+                              <option>7 -10 People</option>
+                              <option>10+ People</option>
+                           </select>
+                        </div>
+                        <div class="col-md-6"><label class="form-label" for="reservation-date">Date *</label><input id="reservation-date" name="Date" type="date" class="menu-filter-input" required/></div>
+                        <div class="col-md-6">
+                           <label class="form-label" for="reservation-time">Time *</label>
+                           <select class="menu-filter-input" id="reservation-time" name="Time" required>
+                              <option value="" disabled selected>Select a time</option>
+                              <option>09:00 AM</option>
+                              <option>10:00 AM</option>
+                              <option>11:00 AM</option>
+                              <option>12:00 PM</option>
+                              <option>01:00 PM</option>
+                              <option>02:00 PM</option>
+                              <option>06:00 PM</option>
+                              <option>07:00 PM</option>
+                              <option>08:00 PM</option>
+                              <option>09:00 PM</option>
+                              <option>10:00 PM</option>
+                           </select>
+                        </div>
+                        <div class="col-12"><label class="form-label" for="reservation-requests">Special Requests *</label><textarea id="reservation-requests" name="Requests" class="menu-filter-input" rows="3" placeholder="Allergies, dietary needs, special occasions..." required></textarea></div>
+                        <div class="col-12"><button class="primary-button w-100 justify-content-center" id="resBtn" type="submit"><svg class="svg-icon fas fa-calendar-check" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-calendar-check"/></svg>Confirm Reservation</button></div>
+                     </div>
+                     <div class="success-message reservation-confirmation" role="status" aria-live="polite" aria-hidden="true">
+                        <svg class="svg-icon fas fa-check-circle" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-circle-check"/></svg>
+                        <p>Table reserved! We'll confirm via email shortly.</p>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="blog">
+         <div class="container">
+            <div class="text-center mb-5">
+               <span class="section-label">News &amp; Updates</span>
+               <h2 class="section-title">Our Latest <span>Blog</span> Posts</h2>
+               <div class="section-divider"></div>
+            </div>
+            <div class="row g-4">
+               <div class="col-md-6 col-lg-4">
+                  <div class="blog-card">
+                     <div class="blog-image">
+                        <img src="img/blog/1.jpg" alt=""/>
+                        <div class="blog-date"><span class="blog-day">14</span><span class="blog-month">Mar</span></div>
+                     </div>
+                     <div class="blog-content">
+                        <div class="blog-category">Food &amp; Health</div>
+                        <div class="blog-title"><a href="#">Healthy Fast Food: A Myth or Beautiful Reality</a></div>
+                        <div class="blog-details"><span><svg class="svg-icon fas fa-user" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-user"/></svg>James Writer</span><span><svg class="svg-icon fas fa-comment" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-comment"/></svg>24 Comments</span></div>
+                        <a href="#" class="blog-link">Read More <svg class="svg-icon fas fa-arrow-right" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-arrow-right"/></svg></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-4">
+                  <div class="blog-card">
+                     <div class="blog-image">
+                        <img src="img/blog/2.jpg" alt=""/>
+                        <div class="blog-date"><span class="blog-day">28</span><span class="blog-month">Feb</span></div>
+                     </div>
+                     <div class="blog-content">
+                        <div class="blog-category">Food Science</div>
+                        <div class="blog-title"><a href="#">Is Fast Food Getting Healthier? Here's What We Found</a></div>
+                        <div class="blog-details"><span><svg class="svg-icon fas fa-user" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-user"/></svg>Sarah Grain</span><span><svg class="svg-icon fas fa-comment" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-comment"/></svg>18 Comments</span></div>
+                        <a href="#" class="blog-link">Read More <svg class="svg-icon fas fa-arrow-right" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-arrow-right"/></svg></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-4">
+                  <div class="blog-card">
+                     <div class="blog-image">
+                        <img src="img/blog/3.jpg" alt=""/>
+                        <div class="blog-date"><span class="blog-day">05</span><span class="blog-month">Jan</span></div>
+                     </div>
+                     <div class="blog-content">
+                        <div class="blog-category">Recipes</div>
+                        <div class="blog-title"><a href="#">Innovative Hot Chickpeas Flake Crackin' Recipe at Home</a></div>
+                        <div class="blog-details"><span><svg class="svg-icon fas fa-user" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-user"/></svg>Chef Marcus</span><span><svg class="svg-icon fas fa-comment" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-comment"/></svg>32 Comments</span></div>
+                        <a href="#" class="blog-link">Read More <svg class="svg-icon fas fa-arrow-right" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-arrow-right"/></svg></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="newsletter">
+         <div class="newsletter-background"></div>
+         <div class="container">
+            <div class="newsletter-content text-center">
+               <span class="section-label" style="color:rgba(255,255,255,.7);">Stay Connected</span>
+               <h2 class="mb-3" style="color:#fff;">Subscribe &amp; Get Exclusive <span style="color:var(--secondary);">Deals</span></h2>
+               <p class="mb-4" style="color:rgba(255,255,255,.78);">Get 15% off your first order plus early access to new menu items</p>
+               <form class="newsletter-form" data-success-form action="mailto:hello@sarabfood.com" method="post" enctype="text/plain">
+                  <input class="newsletter-input" type="email" id="nlEmail" name="Email" placeholder="Enter your email address..." aria-label="Email address" required/>
+                  <button class="newsletter-button" id="nlBtn" type="submit"><svg class="svg-icon fas fa-paper-plane me-1" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-paper-plane"/></svg>Subscribe</button>
+               </form>
+               <p style="color:rgba(255,255,255,.45);font-size:.76rem;margin-top:11px;"><svg class="svg-icon fas fa-lock me-1" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-lock"/></svg>No spam, unsubscribe anytime.</p>
+            </div>
+         </div>
+      </section>
+
+      <section id="contact-section">
+         <div class="container">
+            <div class="text-center mb-5">
+               <span class="section-label">Get In Touch</span>
+               <h2 class="section-title">Contact <span>Us</span></h2>
+               <div class="section-divider"></div>
+               <p class="section-description mx-auto" style="max-width:480px;">Have a question, feedback, or want to plan a special event? We'd love to hear from you.</p>
+            </div>
+            <div class="row g-4">
+               <div class="col-lg-4">
+                  <div class="contact-panel-dark">
+                     <h4>Let's Talk</h4>
+                     <p class="contact-subtitle">We typically respond within 2 hours during business hours.</p>
+                     <div class="contact-detail">
+                        <div class="contact-icon"><svg class="svg-icon fas fa-map-marker-alt" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-location-dot"/></svg></div>
+                        <div class="contact-details"><strong>Address</strong><span>42 Flavor Street, Manhattan,<br/>New York, NY 10001</span></div>
+                     </div>
+                     <div class="contact-detail">
+                        <div class="contact-icon"><svg class="svg-icon fas fa-phone-alt" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-phone"/></svg></div>
+                        <div class="contact-details"><strong>Phone</strong><span>+1 (800) 123-4567</span></div>
+                     </div>
+                     <div class="contact-detail">
+                        <div class="contact-icon"><svg class="svg-icon fas fa-envelope" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-envelope"/></svg></div>
+                        <div class="contact-details"><strong>Email</strong><span>hello@sarabfood.com</span></div>
+                     </div>
+                     <div class="contact-detail">
+                        <div class="contact-icon"><svg class="svg-icon fas fa-clock" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-clock"/></svg></div>
+                        <div class="contact-details"><strong>Working Hours</strong><span>Wed - Sun: 9 AM - 11 PM</span></div>
+                     </div>
+                     <div class="contact-social-links">
+                        <a href="#"><svg class="svg-icon fab fa-facebook-f" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-facebook-f"/></svg></a>
+                        <a href="#"><svg class="svg-icon fab fa-instagram" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-instagram"/></svg></a>
+                        <a href="#"><svg class="svg-icon fab fa-twitter" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-twitter"/></svg></a>
+                        <a href="#"><svg class="svg-icon fab fa-youtube" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-youtube"/></svg></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8">
+                  <form class="form-card reservation-form" data-success-form action="mailto:hello@sarabfood.com" method="post" enctype="text/plain">
+                     <div class="row g-3 reservation-fields">
+                        <div class="col-md-6"><label class="form-label" for="contact-name">Your Name *</label><input id="contact-name" name="Name" type="text" class="menu-filter-input" placeholder="John Doe" autocomplete="name" required/></div>
+                        <div class="col-md-6"><label class="form-label" for="contact-email">Email Address *</label><input id="contact-email" name="Email" type="email" class="menu-filter-input" placeholder="you@email.com" autocomplete="email" required/></div>
+                        <div class="col-md-6"><label class="form-label" for="contact-phone">Phone Number *</label><input id="contact-phone" name="Phone" type="tel" class="menu-filter-input" placeholder="+1 (800) 000-0000" autocomplete="tel" required/></div>
+                        <div class="col-md-6">
+                           <label class="form-label" for="contact-subject">Subject *</label>
+                           <select id="contact-subject" name="Subject" class="menu-filter-input" required>
+                              <option value="" disabled selected>Select a subject</option>
+                              <option>General Inquiry</option>
+                              <option>Catering &amp; Events</option>
+                              <option>Feedback</option>
+                              <option>Partnership</option>
+                              <option>Media &amp; Press</option>
+                           </select>
+                        </div>
+                        <div class="col-12"><label class="form-label" for="contact-message">Message *</label><textarea id="contact-message" name="Message" class="menu-filter-input" rows="5" placeholder="Write your message here..." required></textarea></div>
+                        <div class="col-12"><button class="primary-button" id="ctcBtn" type="submit"><svg class="svg-icon fas fa-paper-plane" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-paper-plane"/></svg>Send Message</button></div>
+                     </div>
+                     <div class="success-message reservation-success-message" role="status" aria-live="polite" aria-hidden="true"><svg class="svg-icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-circle-check"/></svg><p>Message sent! We’ll reply within 2 hours.</p></div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer>
+         <div class="container">
+            <div class="row g-5">
+               <div class="col-lg-4">
+                  <div class="footer-name">Sar<span>ab</span></div>
+                  <p class="footer-description">We bring the world's finest flavors together in a fast, friendly, and affordable experience. Every meal crafted with love.</p>
+                  <div class="footer-social-links">
+                     <a href="#"><svg class="svg-icon fab fa-facebook-f" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-facebook-f"/></svg></a>
+                     <a href="#"><svg class="svg-icon fab fa-instagram" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-instagram"/></svg></a>
+                     <a href="#"><svg class="svg-icon fab fa-twitter" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-twitter"/></svg></a>
+                     <a href="#"><svg class="svg-icon fab fa-youtube" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-youtube"/></svg></a>
+                     <a href="#"><svg class="svg-icon fab fa-tiktok" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-tiktok"/></svg></a>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-2">
+                  <div class="feature-title">Quick Links</div>
+                  <ul class="footer-links ps-0">
+                     <li><a href="#hero"><svg class="svg-icon fas fa-chevron-right" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-chevron-right"/></svg>Home</a></li>
+                     <li><a href="#about"><svg class="svg-icon fas fa-chevron-right" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-chevron-right"/></svg>About Us</a></li>
+                     <li><a href="#menu"><svg class="svg-icon fas fa-chevron-right" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-chevron-right"/></svg>Our Menu</a></li>
+                     <li><a href="#reservation"><svg class="svg-icon fas fa-chevron-right" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-chevron-right"/></svg>Reservation</a></li>
+                     <li><a href="#blog"><svg class="svg-icon fas fa-chevron-right" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-chevron-right"/></svg>Blog</a></li>
+                     <li><a href="#contact-section"><svg class="svg-icon fas fa-chevron-right" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-chevron-right"/></svg>Contact</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-6 col-lg-2">
+                  <div class="feature-title">Our Menu</div>
+                  <ul class="footer-links ps-0">
+                     <li><a href="#menu"><svg class="svg-icon fas fa-chevron-right" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-chevron-right"/></svg>Burgers</a></li>
+                     <li><a href="#menu"><svg class="svg-icon fas fa-chevron-right" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-chevron-right"/></svg>Pizza</a></li>
+                     <li><a href="#menu"><svg class="svg-icon fas fa-chevron-right" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-chevron-right"/></svg>Fried Chicken</a></li>
+                     <li><a href="#menu"><svg class="svg-icon fas fa-chevron-right" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-chevron-right"/></svg>Wraps &amp; Rolls</a></li>
+                     <li><a href="#menu"><svg class="svg-icon fas fa-chevron-right" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-chevron-right"/></svg>Pasta</a></li>
+                     <li><a href="#menu"><svg class="svg-icon fas fa-chevron-right" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-chevron-right"/></svg>Desserts</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-4">
+                  <div class="feature-title">Get In Touch</div>
+                  <div class="footer-contact-item">
+                     <div class="footer-contact-icon"><svg class="svg-icon fas fa-map-marker-alt" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-location-dot"/></svg></div>
+                     <div class="footer-contact-info"><strong>Address</strong>42 Flavor Street, Manhattan, NY 10001</div>
+                  </div>
+                  <div class="footer-contact-item">
+                     <div class="footer-contact-icon"><svg class="svg-icon fas fa-phone-alt" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-phone"/></svg></div>
+                     <div class="footer-contact-info"><strong>Phone</strong>+1 (800) 123-4567</div>
+                  </div>
+                  <div class="footer-contact-item">
+                     <div class="footer-contact-icon"><svg class="svg-icon fas fa-envelope" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-envelope"/></svg></div>
+                     <div class="footer-contact-info"><strong>Email</strong>hello@sarabfood.com</div>
+                  </div>
+                  <div class="footer-contact-item">
+                     <div class="footer-contact-icon"><svg class="svg-icon fas fa-clock" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-clock"/></svg></div>
+                     <div class="footer-contact-info"><strong>Hours</strong>Wed - Sun: 09 AM - 11 PM</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="container">
+               <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                  <p>&copy 2026 <span>Sarab Restaurant</span>. All Rights Reserved by <a target="_blank" class="mx-0 fw-bold text-success" href="https://bestwpware.com/">Bestwpware</a>. Made with <span><svg class="svg-icon fas fa-heart" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-heart"/></svg></span>  <br>Distributed by <a target="_blank" class="mx-0 fw-bold text-success" href="https://themewagon.com">ThemeWagon</a></p>
+                  <div><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      
+      <a id="btt" href="#top" aria-label="Back to top"><svg class="svg-icon fas fa-chevron-up" aria-hidden="true" focusable="false"><use href="img/icons.svg#icon-chevron-up"/></svg></a>
+      <script>
+         document.querySelectorAll('form[data-success-form]').forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+               event.preventDefault();
+               var message = form.querySelector('.success-message');
+               message.classList.add('is-visible');
+               message.setAttribute('aria-hidden', 'false');
+            });
+         });
+      </script>
+   </body>
+</html>
